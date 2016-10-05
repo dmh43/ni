@@ -12,6 +12,13 @@ Make the following `ni` statements more concise.
 
 1. `ni n10m'r ru {|l| Math.log(l.a.to_i) > 2}' `
 
+##Edge Cases
+
+1. Consider this `ni` snippet: `ni ::foo[n5] n1p'r split /\n/, foo'`
+   - Why is `n1` necessary before `p'r split...`?
+   - **Answer:** The first statement creates a closure, which is an empty data stream. According to [the Perl docs at the time of writing](perl.md), the Perl driver won't execute your code at all if the input stream is empty. Thus, you need to feed it a row using `n1` to kickstart it.
+
+
 ##Fluency
 
 Explain what the following `ni` snippets do:

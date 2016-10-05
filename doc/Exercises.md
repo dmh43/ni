@@ -11,6 +11,12 @@ Write three `ni` snippets to compute the first 100 triangular numbers (1,3,6,10,
 2. Use a ni stream operator to generate a range, then use a perl snippet to generate two columns of data; then write another perl snippet that combines the two columns appropriately to generate the ouput numbers.
 3. Write a different solution from #1 and #2
 
+##Edge Cases
+
+1. Consider this `ni` snippet: `ni ::foo[n5] n1p'r split /\n/, foo'`
+   - Why is `n1` necessary before `p'r split...`?
+
+
 ##Concision
 
 Make the following `ni` statements more concise.
