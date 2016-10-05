@@ -1,7 +1,7 @@
 #Quickstart Guide
 
 
-##How to Learn ni
+##Zero to ni competence
 
 1. `git clone` the repo, `cd` into the folder, and run `./build.sh` to get `ni` installed on your machine
 2. Set up `ssh` (see below).
@@ -11,12 +11,13 @@
 6. Work through the [Ruby](ruby.md) documentation.
    - It should make sense.
    - Note the importance of casting value types, which is unique to Ruby.
-7. If you have no Lisp experience, you may want to skip over the Lisp documentation, since its syntax is significantly different from scripting languages.
-8. Else:
-    - Install SBCL Lisp if necessary (see below)
+7. Read up on [containerizing](container.md) your `ni` computations.
+8. If you have no Lisp experience, you may want to skip over the Lisp documentation, since its syntax is significantly different from scripting languages.
+9. Else:
+    - Install SBCL Lisp if you want; you can also run your Lisp operations containerized, which is nice because installing SBCL Lisp is a [pain](#setting-up-lisp).
     - Work through the [Lisp](lisp.md) documentation.
+10. Work through some of the `ni` [exercises](exercises.md), which have accompanying [solutions](solutions.md).
 
-At this point, you are competent enough to write this documentation. To prove this to yourself, put some data in a TSV on your `dev` machine, then use `ni` to stream it to your machine and run a job on it.
 
 ##Setting up SSH
 
@@ -29,7 +30,7 @@ Host dev
     User <username>
 ```
 
-##Setting up Lisp (SBCL)
+##Setting up Lisp
 
 You can run `ni` without setting up Lisp locally using a Dockerized container. See [lisp.md](doc/lisp.md) for details. I find the local setup a bit more intuitive, plus it'll give you a Lisp REPL if you don't already have one.
 
