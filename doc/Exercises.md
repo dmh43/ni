@@ -16,3 +16,10 @@ Write three `ni` snippets to compute the first 100 triangular numbers (1,3,6,10,
 Make the following `ni` statements more concise.
 
 1. `ni n10m'r ru {|l| Math.log(l.a` **i** `) > 2}' `
+
+
+##Fluency
+
+Explain what the following `ni` snippets do:
+
+1. `ni n100p'sum rw {1}'`
